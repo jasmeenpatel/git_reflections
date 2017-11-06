@@ -9,14 +9,19 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	We can add files which makes some logical change to the project and then use git diff and git diff --staged commands to compare the new changes in the working diretory and staging area, and staging area and repostory respectively.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	Branches can be helpful when we want to add some extra experimental feature or when we want some modified version as well as the regular version of the code. This can be helpful when we want to demonstrate a modified version or want to add some feature which we might want to add in the feature.It helps in context switching and collobration.
 
 How do the diagrams help you visualize the branch structure?
+	Branches can help to visualize the structure of the commits made over the time
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	The result of merging two branches is that, the changes made by Sarah or any one else are merged into the main brach. It can be represented in the graph which is useful to visualize the changes made by each party/branch.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	Merging two braches always manually is difficult as you need to review all the work done by them and decide finally what to add. This whole process is very painful. Git's automatic merging comes here to rescue. It can merge obvious lines which mush be included. However if the same part of the code (from the parent commit) is being changed by the two braches then it raises a merge confict which needs to be corrected mannually.
